@@ -8,7 +8,7 @@ const toggleDark = useToggle(isDark);
 <template>
   <header class="header">
     <div class="logo">
-      <p>Sort By</p>
+      <p>Filter By</p>
     </div>
     <div class="operation">
       <a href="https://github.com/kovsu/sort-by" target="_blank">

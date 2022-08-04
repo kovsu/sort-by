@@ -1,99 +1,171 @@
 let data = [
   {
     content: "lorem ipsum dolor sit amet",
-    des: {},
+    des: {
+      color: "",
+      tag: "",
+    },
   },
   {
     content: "Go and catch it",
-    des: {},
+    des: {
+      color: "",
+      tag: "",
+    },
   },
   {
     content: "So what do you want to do",
-    des: {},
+    des: {
+      color: "",
+      tag: "",
+    },
   },
   {
     content: "This is a great place to look",
-    des: {},
+    des: {
+      color: "",
+      tag: "",
+    },
   },
   {
     content: "have you ever seen this placeholder before",
-    des: {},
+    des: {
+      color: "",
+      tag: "",
+    },
   },
   {
     content: "Do you want to seen",
-    des: {},
+    des: {
+      color: "",
+      tag: "",
+    },
   },
   {
     content: "lorem ipsum dolor sit amet",
-    des: {},
+    des: {
+      color: "",
+      tag: "",
+    },
   },
   {
     content: "Go and catch it",
-    des: {},
+    des: {
+      color: "",
+      tag: "",
+    },
   },
   {
     content: "So what do you want to do",
-    des: {},
+    des: {
+      color: "",
+      tag: "",
+    },
   },
   {
     content: "This is a great place to look",
-    des: {},
+    des: {
+      color: "",
+      tag: "",
+    },
   },
   {
     content: "have you ever seen this placeholder before",
-    des: {},
+    des: {
+      color: "",
+      tag: "",
+    },
   },
   {
     content: "Do you want to seen",
-    des: {},
+    des: {
+      color: "",
+      tag: "",
+    },
   },
   {
     content: "lorem ipsum dolor sit amet",
-    des: {},
+    des: {
+      color: "",
+      tag: "",
+    },
   },
   {
     content: "Go and catch it",
-    des: {},
+    des: {
+      color: "",
+      tag: "",
+    },
   },
   {
     content: "So what do you want to do",
-    des: {},
+    des: {
+      color: "",
+      tag: "",
+    },
   },
   {
     content: "This is a great place to look",
-    des: {},
+    des: {
+      color: "",
+      tag: "",
+    },
   },
   {
     content: "have you ever seen this placeholder before",
-    des: {},
+    des: {
+      color: "",
+      tag: "",
+    },
   },
   {
     content: "Do you want to seen",
-    des: {},
+    des: {
+      color: "",
+      tag: "",
+    },
   },
   {
     content: "lorem ipsum dolor sit amet",
-    des: {},
+    des: {
+      color: "",
+      tag: "",
+    },
   },
   {
     content: "Go and catch it",
-    des: {},
+    des: {
+      color: "",
+      tag: "",
+    },
   },
   {
     content: "So what do you want to do",
-    des: {},
+    des: {
+      color: "",
+      tag: "",
+    },
   },
   {
     content: "This is a great place to look",
-    des: {},
+    des: {
+      color: "",
+      tag: "",
+    },
   },
   {
     content: "have you ever seen this placeholder before",
-    des: {},
+    des: {
+      color: "",
+      tag: "",
+    },
   },
   {
     content: "Do you want to seen",
-    des: {},
+    des: {
+      color: "",
+      tag: "",
+    },
   },
 ];
 
@@ -105,7 +177,8 @@ export interface Tag {
 export const randomData = function (tags: Tag[]) {
   let n = tags.length;
   data.forEach((item) => {
-    item.des = Math.floor(Math.random() * n);
+    const random = Math.floor(Math.random() * n);
+    item.des = tags[random];
   });
   return data;
 };

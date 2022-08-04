@@ -135,5 +135,7 @@ h1 {
 
 .btn {
   margin-top: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
 }
 </style>
